@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\stm32f407.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\stm32f407.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Jan 08 14:42:53 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Jan 08 17:31:51 2026
 <BR><P>
 <H3>Maximum Stack Usage =        584 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1433,12 +1433,12 @@ Global Symbols
 <P><STRONG><a name="[d0]"></a>initI2c2</STRONG> (Thumb, 142 bytes, Stack size 32 bytes, aht20.o(i.initI2c2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = initI2c2 &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_StructInit
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Cmd
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_StructInit
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_StructInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initAht20
 </UL>
@@ -2453,12 +2453,12 @@ Global Symbols
 <P><STRONG><a name="[b3]"></a>writeMulByteByI2c2</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, aht20.o(i.writeMulByteByI2c2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = writeMulByteByI2c2 &rArr; checkI2cEvent &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick &rArr; vAssertCalled &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_AcknowledgeConfig
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkI2cEvent
+<LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readStateOfAht20
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calibrateAht20

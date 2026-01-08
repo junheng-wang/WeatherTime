@@ -3,6 +3,7 @@
 ".\objects\board.o"
 ".\objects\show_page.o"
 ".\objects\system_operation_scheduling.o"
+".\objects\ui.o"
 ".\objects\rtc.o"
 ".\objects\usart1.o"
 ".\objects\aht20.o"

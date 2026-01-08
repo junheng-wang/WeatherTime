@@ -415,6 +415,16 @@
               <FileType>5</FileType>
               <FilePath>..\app\system_operation_scheduling.h</FilePath>
             </File>
+            <File>
+              <FileName>ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\app\ui.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
