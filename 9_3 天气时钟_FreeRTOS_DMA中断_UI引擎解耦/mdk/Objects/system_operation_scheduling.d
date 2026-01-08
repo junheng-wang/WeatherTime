@@ -1,0 +1,58 @@
+.\objects\system_operation_scheduling.o: ..\app\system_operation_scheduling.c
+.\objects\system_operation_scheduling.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\system_operation_scheduling.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\FreeRTOS.h
+.\objects\system_operation_scheduling.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\system_operation_scheduling.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\portable\FreeRTOSConfig.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\device\stm32f4xx.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\core\core_cm4.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\core\core_cmInstr.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\core\core_cmFunc.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\core\core_cmSimd.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\device\system_stm32f4xx.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\device\stm32f4xx_conf.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_adc.h
+.\objects\system_operation_scheduling.o: ..\firmware\cmsis\device\stm32f4xx.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_crc.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_dbgmcu.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_dma.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_exti.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_flash.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_gpio.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_i2c.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_iwdg.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_pwr.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_rcc.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_rtc.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_sdio.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_spi.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_syscfg.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_tim.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_usart.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_wwdg.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\misc.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_cryp.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_hash.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_rng.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_can.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_dac.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_dcmi.h
+.\objects\system_operation_scheduling.o: ..\firmware\driver\inc\stm32f4xx_fsmc.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\portable.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\portable\portmacro.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\task.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\list.h
+.\objects\system_operation_scheduling.o: ..\third_lib\freertos\include\timers.h
+.\objects\system_operation_scheduling.o: ..\driver\esp_at.h
+.\objects\system_operation_scheduling.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\system_operation_scheduling.o: ..\driver\rtc.h
+.\objects\system_operation_scheduling.o: ..\driver\aht20.h
+.\objects\system_operation_scheduling.o: ..\app\show_page.h
+.\objects\system_operation_scheduling.o: ..\driver\image\image.h
+.\objects\system_operation_scheduling.o: ..\driver\st7789.h
+.\objects\system_operation_scheduling.o: ..\driver\font\font.h
+.\objects\system_operation_scheduling.o: ..\app\system_operation_scheduling.h
