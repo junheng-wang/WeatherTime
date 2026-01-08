@@ -1,7 +1,10 @@
 .\objects\show_page.o: ..\app\show_page.c
 .\objects\show_page.o: ..\app\show_page.h
-.\objects\show_page.o: ..\driver\image\image.h
+.\objects\show_page.o: ..\app\ui.h
+.\objects\show_page.o: ..\driver\font\font.h
 .\objects\show_page.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\show_page.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\show_page.o: ..\driver\image\image.h
 .\objects\show_page.o: ..\driver\st7789.h
 .\objects\show_page.o: ..\firmware\cmsis\device\stm32f4xx.h
 .\objects\show_page.o: ..\firmware\cmsis\core\core_cm4.h
@@ -37,8 +40,6 @@
 .\objects\show_page.o: ..\firmware\driver\inc\stm32f4xx_dac.h
 .\objects\show_page.o: ..\firmware\driver\inc\stm32f4xx_dcmi.h
 .\objects\show_page.o: ..\firmware\driver\inc\stm32f4xx_fsmc.h
-.\objects\show_page.o: ..\driver\font\font.h
-.\objects\show_page.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\show_page.o: ..\driver\esp_at.h
 .\objects\show_page.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\show_page.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

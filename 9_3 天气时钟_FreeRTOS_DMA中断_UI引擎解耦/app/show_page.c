@@ -24,13 +24,13 @@ void showWelcomePage(void)
 {
 	const uint16_t color_bg = mkcolor(0, 0, 0);
 	// 清屏
-	fillColorForSt7789(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, color_bg);
+	uiFillColorParamSendToQueue(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, color_bg);
 	// 显示梅花图案
-	showImage(30, 10, &img_meihua);
+	uiShowImageParamSendToQueue(30, 10, &img_meihua);
 	// 显示文字
-	showString(40, 205, "梅花嵌入式", mkcolor(237, 128, 147), color_bg, &font32_maple_bold);
-    showString(56, 233, "天气时钟", mkcolor(86, 165, 255), color_bg, &font32_maple_bold);
-    showString(60, 285, "loading...", mkcolor(255, 255, 255), color_bg, &font24_maple_bold);
+	uiShowStringParamSendToQueue(40, 205, "梅花嵌入式", mkcolor(237, 128, 147), color_bg, &font32_maple_bold);
+    uiShowStringParamSendToQueue(56, 233, "天气时钟", mkcolor(86, 165, 255), color_bg, &font32_maple_bold);
+    uiShowStringParamSendToQueue(60, 285, "loading...", mkcolor(255, 255, 255), color_bg, &font24_maple_bold);
 }
 
 /**
@@ -38,9 +38,9 @@ void showWelcomePage(void)
  */
 void showWirelessErrorPage(void)
 {
-	fillColorForSt7789(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
-	showImage(40, 37, &img_error);							// 显示ESP32的WIFI或SNTP初始化失败警醒图片
-	showString(5, 240, "Wireless Init Filed", mkcolor(255, 255, 0), mkcolor(0, 0, 0), &font24_maple_bold);
+	uiFillColorParamSendToQueue(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
+	uiShowImageParamSendToQueue(40, 37, &img_error);							// 显示ESP32的WIFI或SNTP初始化失败警醒图片
+	uiShowStringParamSendToQueue(5, 240, "Wireless Init Filed", mkcolor(255, 255, 0), mkcolor(0, 0, 0), &font24_maple_bold);
 }
 
 /**
@@ -48,11 +48,11 @@ void showWirelessErrorPage(void)
  */
 void showWaitWifiConnectPage(void)
 {
-	fillColorForSt7789(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
-	showImage(30, 37, &img_wifi);							// 显示ESP32的WIFI或SNTP尝试连接Wifi
-	showString(85, 210, "WIFI", mkcolor(0, 255, 255), mkcolor(0, 0, 0), &font32_maple_bold);
-	showString(30, 250, "[HONOR 70 Pro]", mkcolor(0, 255, 255), mkcolor(0, 0, 0), &font24_maple_bold);
-	showString(75, 280, "连接中", mkcolor(0, 0, 255), mkcolor(0, 0, 0), &font24_maple_bold);
+	uiFillColorParamSendToQueue(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
+	uiShowImageParamSendToQueue(30, 37, &img_wifi);							// 显示ESP32的WIFI或SNTP尝试连接Wifi
+	uiShowStringParamSendToQueue(85, 210, "WIFI", mkcolor(0, 255, 255), mkcolor(0, 0, 0), &font32_maple_bold);
+	uiShowStringParamSendToQueue(30, 250, "[HONOR 70 Pro]", mkcolor(0, 255, 255), mkcolor(0, 0, 0), &font24_maple_bold);
+	uiShowStringParamSendToQueue(75, 280, "连接中", mkcolor(0, 0, 255), mkcolor(0, 0, 0), &font24_maple_bold);
 }
 
 /**
@@ -60,27 +60,27 @@ void showWaitWifiConnectPage(void)
  */
 void showMainPage(void)
 {
-	fillColorForSt7789(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
+	uiFillColorParamSendToQueue(0, 0, ST7789_WIDTH-1, ST7789_HEIGHT-1, mkcolor(0, 0, 0));	// 先将页面全部刷新为黑色
 	
-	fillColorForSt7789(15, 15, 224, 154, color_bg_time);	// 上半部分绘制显示时间的白色框
-	showImage(23, 20, &icon_wifi);		// Wifi图标
+	uiFillColorParamSendToQueue(15, 15, 224, 154, color_bg_time);	// 上半部分绘制显示时间的白色框
+	uiShowImageParamSendToQueue(23, 20, &icon_wifi);		// Wifi图标
 	updataShowWifiSsid(WIFI_SSID);
-	showString(25, 42, "--:--", mkcolor(0, 0, 0), color_bg_time, &font76_maple_extrabold);			// 显示时间
-	showString(35, 121, "----/--/-- ------", mkcolor(0, 0, 0), color_bg_time, &font20_maple_bold);	// 显示日期
+	uiShowStringParamSendToQueue(25, 42, "--:--", mkcolor(0, 0, 0), color_bg_time, &font76_maple_extrabold);			// 显示时间
+	uiShowStringParamSendToQueue(35, 121, "----/--/-- ------", mkcolor(0, 0, 0), color_bg_time, &font20_maple_bold);	// 显示日期
 	
-	fillColorForSt7789(15, 165, 114, 304, color_bg_inner);	// 左下部分绘制芯片所处环境的温湿度
-	showString(19, 170, "室内环境", mkcolor(0, 0, 0), color_bg_inner, &font24_maple_semibold);
-    showString(86, 191, "C", mkcolor(0, 0, 0), color_bg_inner, &font32_maple_bold);
+	uiFillColorParamSendToQueue(15, 165, 114, 304, color_bg_inner);	// 左下部分绘制芯片所处环境的温湿度
+	uiShowStringParamSendToQueue(19, 170, "室内环境", mkcolor(0, 0, 0), color_bg_inner, &font24_maple_semibold);
+    uiShowStringParamSendToQueue(86, 191, "C", mkcolor(0, 0, 0), color_bg_inner, &font32_maple_bold);
 	updataShowInnerTemperature(999.9f);
-    showString(91, 262, "%", mkcolor(0, 0, 0),color_bg_inner, &font32_maple_bold);
+    uiShowStringParamSendToQueue(91, 262, "%", mkcolor(0, 0, 0),color_bg_inner, &font32_maple_bold);
 	updataShowInnerHumidity(999.9f);
 	
-	fillColorForSt7789(125, 165, 224, 304, color_bg_outdoor);	// 右下部分绘制选定城市的天气
+	uiFillColorParamSendToQueue(125, 165, 224, 304, color_bg_outdoor);	// 右下部分绘制选定城市的天气
 	updataShowOutdoorCity("北京");
-	showString(192, 189, "C", mkcolor(0, 0, 0), color_bg_outdoor, &font20_maple_bold);
+	uiShowStringParamSendToQueue(192, 189, "C", mkcolor(0, 0, 0), color_bg_outdoor, &font20_maple_bold);
 	updataShowOutdoorTemperature(999.9f);
 	
-	showImage(139, 239, &icon_wenduji);		// 温度计图标
+	uiShowImageParamSendToQueue(139, 239, &icon_wenduji);		// 温度计图标
 	updataShowOutdoorWeatherIcon(1);
 }
 
@@ -95,7 +95,7 @@ void updataShowWifiSsid(const char* ssid)
 	char wifi_name[21];
 	// 将 ssid 格式化为右对齐的 20 个字符，并存储到 str 中
     snprintf(wifi_name, sizeof(wifi_name), "%20s", ssid);
-    showString(50, 23, wifi_name, mkcolor(143, 143, 143), color_bg_time, &font16_maple);
+    uiShowStringParamSendToQueue(50, 23, wifi_name, mkcolor(143, 143, 143), color_bg_time, &font16_maple);
 }
 
 /**
@@ -109,7 +109,7 @@ void updataShowTime(RtcTimeType* rtc_time)
 	// 闪烁显示时间分隔符":"
     char comma = (rtc_time->second % 2 == 0) ? ':' : ' ';
     snprintf(str, sizeof(str), "%02u%c%02u", rtc_time->hour, comma, rtc_time->minute);
-    showString(25, 42, str, mkcolor(0, 0, 0), color_bg_time, &font76_maple_extrabold);
+    uiShowStringParamSendToQueue(25, 42, str, mkcolor(0, 0, 0), color_bg_time, &font76_maple_extrabold);
 }
 
 /**
@@ -128,7 +128,7 @@ void updataShowDate(RtcTimeType* rtc_time)
 		rtc_time->weekday == 5 ? "五" :
 	    rtc_time->weekday == 6 ? "六" :
 		rtc_time->weekday == 7 ? "天" : "X");
-	showString(35, 121, str, mkcolor(0, 0, 0), color_bg_time, &font20_maple_bold);
+	uiShowStringParamSendToQueue(35, 121, str, mkcolor(0, 0, 0), color_bg_time, &font20_maple_bold);
 }
 
 /**
@@ -141,7 +141,7 @@ void updataShowInnerTemperature(float temperature)
     if (temperature > -10.0f && temperature <= 100.0f)
         snprintf(str, sizeof(str), "%2.0f", temperature);
 	
-    showString(30, 192, str, mkcolor(0, 0, 0), color_bg_inner, &font54_maple_semibold);
+    uiShowStringParamSendToQueue(30, 192, str, mkcolor(0, 0, 0), color_bg_inner, &font54_maple_semibold);
 }
 
 /**
@@ -154,7 +154,7 @@ void updataShowInnerHumidity(float humidity)
     if (humidity > 0.0f && humidity <= 99.99f)
         snprintf(str, sizeof(str), "%2.0f", humidity);
 	
-    showString(25, 239, str, mkcolor(0, 0, 0), color_bg_inner, &font64_maple_extrabold);
+    uiShowStringParamSendToQueue(25, 239, str, mkcolor(0, 0, 0), color_bg_inner, &font64_maple_extrabold);
 }
 
 /**
@@ -165,7 +165,7 @@ void updataShowOutdoorCity(const char *city)
 {
     char str[9];
     snprintf(str, sizeof(str), "%s", city);
-    showString(127, 170, str, mkcolor(0, 0, 0), color_bg_outdoor, &font24_maple_semibold);
+    uiShowStringParamSendToQueue(127, 170, str, mkcolor(0, 0, 0), color_bg_outdoor, &font24_maple_semibold);
 }
 
 /**
@@ -177,7 +177,7 @@ void updataShowOutdoorTemperature(float temperature)
     char str[3] = {'-', '-'};
     if (temperature > -10.0f && temperature <= 100.0f)
         snprintf(str, sizeof(str), "%2.0f", temperature);
-    showString(135, 190, str, mkcolor(0, 0, 0), color_bg_outdoor, &font54_maple_bold);
+    uiShowStringParamSendToQueue(135, 190, str, mkcolor(0, 0, 0), color_bg_outdoor, &font54_maple_bold);
 }
 
 /**
@@ -203,5 +203,5 @@ void updataShowOutdoorWeatherIcon(const int code)
         icon = &icon_zhongxue;
     else // 扬沙、龙卷风等
         icon = &icon_na;
-    showImage(166, 240, icon);
+    uiShowImageParamSendToQueue(166, 240, icon);
 }

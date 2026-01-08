@@ -188,7 +188,8 @@ void initExternalDevices(void)
 	// 4. 初始化AHT20
 	initAht20();
 	// 5. 初始化LCD屏幕
-	initSt7798();
+	// initSt7798();
+	initUi();
 	// 6. LCD屏幕显示欢迎页面
 	showWelcomePage();
 	// 7. 初始化Wifi和SNTP工作模式

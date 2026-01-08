@@ -46,10 +46,11 @@
 .\objects\main.o: ..\third_lib\freertos\include\task.h
 .\objects\main.o: ..\third_lib\freertos\include\list.h
 .\objects\main.o: ..\app\show_page.h
-.\objects\main.o: ..\driver\image\image.h
-.\objects\main.o: ..\driver\st7789.h
+.\objects\main.o: ..\app\ui.h
 .\objects\main.o: ..\driver\font\font.h
 .\objects\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: ..\driver\image\image.h
+.\objects\main.o: ..\driver\st7789.h
 .\objects\main.o: ..\driver\esp_at.h
 .\objects\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

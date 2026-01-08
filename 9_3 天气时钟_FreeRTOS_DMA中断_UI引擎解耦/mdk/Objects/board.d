@@ -47,9 +47,10 @@
 .\objects\board.o: ..\third_lib\freertos\include\task.h
 .\objects\board.o: ..\third_lib\freertos\include\list.h
 .\objects\board.o: ..\app\show_page.h
+.\objects\board.o: ..\app\ui.h
+.\objects\board.o: ..\driver\font\font.h
 .\objects\board.o: ..\driver\image\image.h
 .\objects\board.o: ..\driver\st7789.h
-.\objects\board.o: ..\driver\font\font.h
 .\objects\board.o: ..\driver\esp_at.h
 .\objects\board.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\board.o: D:\Program Files (x86)\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

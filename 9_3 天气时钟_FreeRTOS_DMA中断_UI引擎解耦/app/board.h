@@ -12,6 +12,7 @@
 #include "aht20.h"
 #include "st7789.h"
 #include "esp_at.h"
+#include "ui.h"
 
 
 void initBoardOnLowLevel(void);

@@ -2,6 +2,7 @@
 #define __SHOW_PAGE_H__
 
 
+#include "ui.h"
 #include "image.h"
 #include "st7789.h"
 #include "esp_at.h"

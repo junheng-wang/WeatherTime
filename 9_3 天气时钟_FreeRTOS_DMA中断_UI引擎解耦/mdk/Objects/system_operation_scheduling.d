@@ -52,7 +52,8 @@
 .\objects\system_operation_scheduling.o: ..\driver\rtc.h
 .\objects\system_operation_scheduling.o: ..\driver\aht20.h
 .\objects\system_operation_scheduling.o: ..\app\show_page.h
+.\objects\system_operation_scheduling.o: ..\app\ui.h
+.\objects\system_operation_scheduling.o: ..\driver\font\font.h
 .\objects\system_operation_scheduling.o: ..\driver\image\image.h
 .\objects\system_operation_scheduling.o: ..\driver\st7789.h
-.\objects\system_operation_scheduling.o: ..\driver\font\font.h
 .\objects\system_operation_scheduling.o: ..\app\system_operation_scheduling.h
