@@ -17,4 +17,24 @@ void initBoardLowLevel(void)
 {
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM6, ENABLE);
+}
+
+/**
+ *@brief 初始化所有用到的NVIC配置
+ */
+void initPeripheralNvic(void)
+{
+	// 设置中断优先级
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+	
+	
+	NVIC_InitTypeDef NVIC_InitStructure;
+	// 配置TIM6_DAC_IRQn
+	NVIC_InitStructure.NVIC_IRQChannel = TIM6_DAC_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 10;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+	
 }

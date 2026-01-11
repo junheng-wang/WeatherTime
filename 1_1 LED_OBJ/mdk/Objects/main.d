@@ -36,4 +36,4 @@
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_dac.h
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_dcmi.h
 .\objects\main.o: ..\firmware\driver\inc\stm32f4xx_fsmc.h
-.\objects\main.o: ..\driver\systick_delay.h
+.\objects\main.o: ..\driver\delay_tim6.h

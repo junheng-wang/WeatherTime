@@ -8,5 +8,6 @@ extern led_desc_t led2;
 extern led_desc_t led3;
 
 void initBoardLowLevel(void);
+void initPeripheralNvic(void);
 
 #endif
